@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/ico" href="/logo.ico" /> -->
+  <meta
+    name='viewport'
+    content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover'
+  />
+  <title>Invest</title>
+  <script>
+    const debounce=(e,t)=>{let n=null;return()=>{null!==n&&clearTimeout(n),n=setTimeout(e,t)}},getFontSize=(e,t)=>{let n=16;t=t.innerWidth;1920<=t?n=16:t<=375?n=7.5:n=Math.round(t/96),e.querySelector("html").style.fontSize=n+"px"};((e,t)=>{const n=debounce(getFontSize.bind(this,e,t),300);n(),t.addEventListener("resize",n)})(document,window);
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

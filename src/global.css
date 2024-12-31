@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Poppins'; 
+  src: url('../src/assets/font/Poppins-Regular.ttf'); 
+}
+
+
+@font-face {
+  font-family: 'PoppinsMedium'; 
+  src: url('../src/assets/font/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: 'SegoeUI'; 
+  src: url('../src/assets/font/SegoeUI.ttf'); 
+}
+
+body{
+  margin: 0 !important;
+}
+
+.ant-table-sticky-holder{
+  background:  transparent !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.Toastify__toast-body div:last-child {
+  font-size: 16px;
+}
+
+.Toastify__toast-container {
+  z-index: 1000004;
+}
